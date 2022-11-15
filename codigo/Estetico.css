@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#b5559a;
+  font-family: 'Times New Roman';
+}
+
+.login{
+  width: 400px;
+  overflow: hidden;
+  margin: auto;
+  padding: 70px;
+  background-color:#a4a0ad;
+  border-radius: 20px;
+}
+
+label{  
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h2{  
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+}
+
+span{  
+    color: white;
+    font-size: 15px;
+}  
+
+#contra{  
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+}
+
+#NombreU{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+}
+
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}

@@ -1,0 +1,118 @@
+body {  
+  background: #f6f8fa;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.faq-container {    
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 2rem;
+}
+.faq-container h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #364f6b;
+}
+details { 
+  background-color: #f6f8fa;
+  width: 100%;
+  margin-bottom: 1rem;   
+  border-radius: 8px;  
+  border: 1px solid #d8e0e9;
+  color: #364f6b;
+  position: relative;  
+}
+details summary {  
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+details p {
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  background: #f6f8fa;
+  border-left: 2px solid #364f6b;
+}
+
+details:hover,
+details[open] {
+  box-shadow: 5px 5px 15px #d9d9d9;
+}
+
+details[open] {
+  background: #ffffff;
+}
+
+details[open] summary {
+  font-weight: 600;
+}
+
+details summary::before {
+  position: absolute;
+    content: "👇";    
+    font-size: 1.75rem;
+    top: 10px;
+    right: 16px;  
+}
+
+details[open] summary::before {
+  -moz-animation: rotate 0.6s ease-in-out both;
+          animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-emoji {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 470px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 100px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
