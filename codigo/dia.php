@@ -14,7 +14,7 @@
 
 <html>
     <head>
-         <link href="styleL.css" rel="stylesheet" type="text/css">
+        <link href="styleL.css" rel="stylesheet" type="text/css">
     </head>
     <body style="background-color:#86D168;";>
         <br>
@@ -28,7 +28,7 @@
                 </tr>
                 
                 <?php
-                $sql="SELECT * FROM productos";
+                $sql="SELECT * FROM productos WHERE id_mercado = 3";
                 $result=mysqli_query($conn, $sql);
                 
                 while($mostrar=mysqli_fetch_array($result)){
@@ -43,11 +43,8 @@
                     <td>
                     <input type ="button" value="+"></td>
                     <?php
-                    //$query_nueva= "INSERT INTO Mi lista VALUES (id = ?, nombre = ?, marca = ?, precio=?)"
-                    if( /* aca se spone la condicion para saber si el boton fue presionado */ true){
-                        
-                        
-                        
+                    if(isset($GET['+']) && $_GET['+'] == 'Buscar'){
+                        $boton = 'pulsado';
                     }
                     ?>
                 </tr>
